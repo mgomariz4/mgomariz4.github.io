@@ -85,10 +85,21 @@
 
 <!-- Contingut principal -->
 <div class="content-container">
-    <h1>Benvinguts</h1>
-    <p>Em dic Marc i sóc alumne del curs 4B de <a href="https://agora.xtec.cat/ies-pompeu-fabra-martorell/">l'institut Pompeu Fabra</a></p>
+    <h1>Projecte Coldplay</h1>
+    <p>Fins el dia 15 de novembre estarem fent un projecte que enviarem al grup de música Coldplay.
+     Aquest enviament serà un href="https://es.wikipedia.org/wiki/PechaKucha">PechaKucha</a></p>
+<p>Un PechaKucha és una presentació professional ue consta de 20 diapositives que dura 20 segons cadascuna, és a dir
+una miqueta més de 6 minuts.Ha de ser molt visual i ha de contenir una mica de codi per explicar el que fem en anglès amb la nostra veu(podem utilitzar intel·ligència artificial i traduir i pr pronunciar,com Google Translate)
     <p>A continuació veuràs un llistat amb diferents projectes que farem durant el curs:</p>
     <ul>
+<p>El nostre projecte serà un visualitzador d'àudio en temps real per a Coldplay però personalitzat pel nou àlbum del 4 d'octubre del 2024 anomenat Moon Music,per exemple podem animar una lluna creixent i fer que sigui més gran de tamany si el volum augmenta o que sigui més vermella si el so és més agut i que sigui més verda si el so és més greu.
+A més de la lluna creixent altres figures podrien ser lluna decreixent i lluna completa.
+Si la cançó és Sky full of stars s'animaren estrelles i es faran més gran depenent del volum i el color dependre de si és veu greu o més agut.Si és la cançó We pray posarem el símbol de les mans pregant i es mouran apropant-se amb el volum i canviant de color per exemple de blanc a negre depenent del so,agut o greu.
+Els símbols d'infinit i d'un arc de Sant Martí tambè s'utilitzen<p>
+<h2>Com ho farem?</h2>
+<p>Utilitzarem HTML que és un llenguatge de marques<marca></marca>,CSS que és un llenguatge més important JAVASCRIPT i dintre de JAVASCRIPT utilitzarem 
+<a href="https://editor.p5js.org">p5.js</a>.Primer dibuixarem a mà amb paper milimetrat o en una pàgina web creat pel profesor un dibuix que serà relcionat amb Coldplay i animarem amb música de Coldplay 
+
         <li>Aliments ecològics i convencionals amb JAVASCRIPT.</li>
         <li>Creació d'una obra d'art geomètrica interactiva que reaccioni a la meva veu a través d'un micròfon i a diferents tecles del teclat, al ratolí, que faci moviments repetitius amb sin i cos, moviments aleatoris amb random... Utilitzarem p5.js.</li>
         
