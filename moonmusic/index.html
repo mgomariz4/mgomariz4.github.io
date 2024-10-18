@@ -92,9 +92,9 @@ function draw() {
   let b = map(treble, 0, 255, 50, 255);
   let g = map(level, 0, 1, 50, 255);
 
-  noFill();
+  //noFill();
   stroke(r, g, b);
-  strokeWeight(3);
+  //strokeWeight(3);
 
   // Dibuixar múltiples formes (cors, llunes o arcs de Sant Martí)
   shapes.forEach(shape => {
@@ -169,8 +169,8 @@ function drawRainbow() {
   let colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF']; // Colors de l'arc de Sant Martí
 
   for (let i = 0; i < colors.length; i++) {
-    stroke(colors[i]);
-    noFill();
+    fill(colors[i]);
+    //noFill();
     arc(0, 0, radius + i * 10, radius + i * 10, PI, TWO_PI); // Dibuixar arcs concèntrics amb diferents colors
   }
 }
