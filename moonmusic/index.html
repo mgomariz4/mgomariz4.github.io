@@ -1,5 +1,14 @@
-
-
+<!--Aquesta web com totes lespàgines web té tres parts amb tres llenguatges diferents, la primera part és HTML que significa
+llenguatge de marques hipertext (vol dir que va a més enllà del text: vídeo,imatges, etc), permet el contingut estàtic que no varía 
+amb el temps o amb un click.Si fos un humà seria l'esquelet. Les marques són <marca> i a vegades final de marca </marca>.
+Hi ha dos parts dins HTML una és el head o capçelera on poso metainformació que vol dir marques o etiquetes meta que em diuen
+el tipus de caracters (charset) i ens diu que la pàgina web s'adapti al dispositiu (pc,mòbil,televisió,cinema,tablet) perquè
+width=device-width que vol dir que l'amplada de lo que veiem sigui igual a l'amplada del dispositiu.
+El title es veu a la pestanya.Podem posar els estils dins del head o en un arxiu a part anomenat style.css
+ells estils són un altre llenguatge de programació diferent anomenat css que significa full d'estils en cascada.
+Dintre dels estils posem característiques com els contorns o marges, la separació entre línies,si el text està centrat
+o a un costat,els colors de les lletres i el fons,el tipus de lletra.A diferència de HTML no utilitza  marques amb aquest símbol
+<> si no que escriu el nom de la marca {propietat1: valor1; propietat2; valor2} per exemple: b-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +17,7 @@
     <title>Heart, Crescent Moon, and Rainbow Animation</title>
     <style>
         body {
+            border:5px;/*això farà que tot el cos del codi (bodi) tingui 5 pixels de gruix en totes direccions*/
             display: flex;
             flex-direction: column;
             align-items: center;
