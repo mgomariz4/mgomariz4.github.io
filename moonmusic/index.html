@@ -20,10 +20,24 @@ o a un costat,els colors de les lletres i el fons,el tipus de lletra.A diferènc
             border:5px;/*això farà que tot el cos del codi (bodi) tingui 5 pixels de gruix en totes direccions*/
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center;* alinia tot el centre*/
             justify-content: center;
             min-height: 100vh;
-            background-color: #0d335f;
+            background-color: #0d335f;/* color de fons*/
+            /* els colors es poden escriure amb el seu nom en angglès.
+            Es poden escriure amb RGB (reed,green,blue) i podem posar un número,dos
+            números,tres números i quatre números.Si posem un sol número rgb que es l'escala de
+            grisos sent 0 negre i 255 blanc( 127 seria un gris,un gris foscseria 200 i un gris clar 50).
+            Si posem dos números el primer és l'escala de grisos i el segon la transparència o canal alfa
+            sent 0 transparent i 255 opac(127 semi transparent).
+            Si posem tres número son red,green and blue. Per exemple 255,0,0 es el vermell més fort;
+            0,255,0 és el verd més intens; 0,0,255 és el blau més fort. Quants colors diferents tenim?
+            255x255x255=16.700.000 colors diferents. Si escric color picker RGB HTML puc trobar qualsevol 
+            color, per exemple un estil de rosa és rgb(255,51, 153).Aquest mateix color de rosa el puc posar
+            en números herxadecimals.Els números hexadecimals son del zero al nou, el deu és A, 11 és B,
+            12 es C, 13 es D, 14 es E i 15 es F i així tenim 16 números diferents que es el significat de 
+            hexadecimal. El número FF0000 es igual que 255,0,0; el número 00FF00 es igual qu 0,255,0; 0000FF
+            és igual que 0,0,255
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
