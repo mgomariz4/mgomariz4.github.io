@@ -153,7 +153,80 @@
       switch (dominant) {
         case 'happy':
           stroke(255,0,0)
-         beginShape();
+beginShape();
+curveVertex(316, 86.1875);
+curveVertex(300, 83.1875);
+curveVertex(291, 84.1875);
+curveVertex(281, 92.1875);
+curveVertex(271, 115.1875);
+curveVertex(263, 136.1875);
+curveVertex(262, 156.1875);
+curveVertex(261, 169.1875);
+curveVertex(257, 187.1875);
+curveVertex(259, 195.1875);
+curveVertex(269, 206.1875);
+curveVertex(277, 217.1875);
+curveVertex(277, 232.1875);
+curveVertex(277, 243.1875);
+curveVertex(279, 250.1875);
+curveVertex(286, 260.1875);
+curveVertex(296, 266.1875);
+curveVertex(319, 276.1875);
+curveVertex(337, 278.1875);
+curveVertex(353, 274.1875);
+curveVertex(363, 259.1875);
+curveVertex(371, 246.1875);
+curveVertex(378, 233.1875);
+curveVertex(390, 222.1875);
+curveVertex(391, 201.1875);
+curveVertex(385, 192.1875);
+curveVertex(388, 163.1875);
+curveVertex(389, 140.1875);
+curveVertex(386, 122.1875);
+curveVertex(382, 107.1875);
+curveVertex(366, 89.1875);
+curveVertex(354, 85.1875);
+curveVertex(336, 82.1875);
+curveVertex(316, 82.1875);
+endShape();
+          break;
+
+        case 'sad':
+          stroke(50,100,200,150); // blau
+          beginShape();
+          for (let x = 0; x <= 400; x += 40)
+            vertex(200 + x, 300 + 100 * intensity);
+          for (let x = 400; x >= 0; x -= 40)
+            vertex(200 + x, 300 - 50 * intensity);
+          endShape(CLOSE);
+          break;
+
+        case 'angry':
+          stroke(200,0,0,150); // vermell
+          beginShape();
+          for (let i = 0; i < 16; i++) {
+            let angle = map(i, 0, 16, 0, TWO_PI);
+            let r = i % 2 ? 100 : 175;
+            let x = VIRTUAL_W/2 + r * cos(angle);
+            let y = VIRTUAL_H/2 + r * sin(angle);
+            vertex(x, y);
+          }
+          endShape(CLOSE);
+          break;
+
+        case 'fearful':
+          stroke(100,100,100,150); // gris
+          beginShape();
+          for (let x = 0; x <= VIRTUAL_W; x += 10) {
+            let y = VIRTUAL_H/2 + 50 * sin((x - VIRTUAL_W/2) * 0.05) * intensity;
+            vertex(x, y);
+          }
+          endShape();
+          break;
+
+        case 'surprised':
+          stroke(0,150,255,150); // blau clar
+          beginShape();
 curveVertex(326, 268.1875);
 curveVertex(333, 265.1875);
 curveVertex(342, 260.1875);
@@ -195,53 +268,7 @@ curveVertex(312, 263.1875);
 curveVertex(321, 268.1875);
 curveVertex(328, 268.1875);
 endShape(CLOSE);
-          break;
-
-        case 'sad':
-          stroke(50,100,200,150); // blau
-          beginShape();
-          for (let x = 0; x <= 400; x += 40)
-            vertex(200 + x, 300 + 100 * intensity);
-          for (let x = 400; x >= 0; x -= 40)
-            vertex(200 + x, 300 - 50 * intensity);
-          endShape(CLOSE);
-          break;
-
-        case 'angry':
-          stroke(200,0,0,150); // vermell
-          beginShape();
-          for (let i = 0; i < 16; i++) {
-            let angle = map(i, 0, 16, 0, TWO_PI);
-            let r = i % 2 ? 100 : 175;
-            let x = VIRTUAL_W/2 + r * cos(angle);
-            let y = VIRTUAL_H/2 + r * sin(angle);
-            vertex(x, y);
-          }
-          endShape(CLOSE);
-          break;
-
-        case 'fearful':
-          stroke(100,100,100,150); // gris
-          beginShape();
-          for (let x = 0; x <= VIRTUAL_W; x += 10) {
-            let y = VIRTUAL_H/2 + 50 * sin((x - VIRTUAL_W/2) * 0.05) * intensity;
-            vertex(x, y);
-          }
-          endShape();
-          break;
-
-        case 'surprised':
-          stroke(0,150,255,150); // blau clar
-          beginShape();
-          for (let i = 0; i < 20; i++) {
-            let angle = random(TWO_PI);
-            let r = 50 + 100 * intensity;
-            let x = VIRTUAL_W/2 + r * cos(angle);
-            let y = VIRTUAL_H/2 + r * sin(angle);
-            vertex(x, y);
-          }
-          endShape(CLOSE);
-          break;
+        break;
 
         case 'disgusted':
           stroke(0,150,0,150); // verd
